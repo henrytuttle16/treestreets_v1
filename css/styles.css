@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+    display: flex;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    width: 100vh;
+    padding: 16px;
+}
+
+.logo {
+    width: 30px;
+    height: auto;
+}
+
+header a {
+    text-decoration: none;
+    color: blue;
+}
