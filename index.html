@@ -1,89 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>Tree Street Woodworks</title>
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <!-- Google fonts-->
-    <link
-        href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
-        rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/prostyles.css">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tree Streets Woodworks - Handcrafted wooden furniture, cutting boards, pens, and custom woodworking by a skilled solo craftsman.">
+    <title>Tree Streets Woodworks - Handcrafted Wooden Creations</title>
 
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
 <body>
-    <header>
-        <h1 class="site-heading text-center text-faded d-none d-lg-block">
-            <span class="site-heading-lower myfont">Tree Street Woodworks</span>
-        </h1>
-    </header>
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+    <!-- Header & Navigation -->
+    <header class="header">
         <div class="container">
-            <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="index.html">Tree Street Woodworks</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="index.html">Home</a></li>
-                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="html/products.html">Products</a>
-                    </li>
-                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="html/about.html">Portfolio</a></li>
-                    <!-- <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="diypage.html">About</a>
-                    </li> -->
+            <nav class="nav-container">
+                <a href="index.html" class="logo">Tree Streets Woodworks</a>
+
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu">
+                    0
+                </button>
+
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                    <li><a href="products.html" class="nav-link">Products</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
                 </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: url('assets/img/intro.jpg');">
+        <div class="hero-content">
+            <h1 class="hero-title">Handcrafted with Passion</h1>
+            <p class="hero-subtitle">Custom woodworking pieces made with precision, care, and timeless craftsmanship</p>
+            <a href="portfolio.html" class="btn btn-primary">View My Work</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Welcome to Tree Streets Woodworks</h2>
+            <div class="grid grid-2" style="align-items: center; gap: 3rem;">
+                <div>
+                    <img src="assets/img/about.jpg" alt="Woodworking craftsman at work" style="border-radius: 4px; box-shadow: var(--shadow-lg);">
+                </div>
+                <div>
+                    <h3 style="color: var(--color-primary); margin-bottom: 1rem;">Craftsmanship Meets Artistry</h3>
+                    <p style="color: var(--color-text-light); font-size: 1.1rem; line-height: 1.8;">
+                        Every piece that leaves my workshop is a labor of love. As a solo woodworker, I take pride in creating unique,
+                        handcrafted items that blend functionality with beauty. From custom cutting boards to elegant pens and bowls,
+                        each creation showcases the natural beauty of wood and the dedication to quality craftsmanship.
+                    </p>
+                    <p style="color: var(--color-text-light); font-size: 1.1rem; line-height: 1.8;">
+                        Whether you're looking for a one-of-a-kind gift or a custom piece for your home, I work closely with each
+                        client to bring their vision to life. Let's create something beautiful together.
+                    </p>
+                    <a href="contact.html" class="btn btn-secondary" style="margin-top: 1.5rem;">Request Custom Work</a>
+                </div>
             </div>
         </div>
-    </nav>
-    <section class="page-section clearfix">
+    </section>
+
+    <!-- Featured Work Section -->
+    <section class="section" style="background-color: white;">
         <div class="container">
-            <div class="intro">
-                <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="assets/img/intro.jpg" alt="..." />
-                <div class="intro-text left-0 text-center bg-faded p-5 rounded">
-                    <h2 class="section-heading mb-4">
-                        <span class="section-heading-upper">Custom Made Designs</span>
-                        <!-- <span class="section-heading-lower">Custom Made Designs</span> -->
-                    </h2>
-                    <p class="mb-3">Welcome to Tree Street Woodworks! My name is Benj and I love woodworking. Check out my products and portfolio on this website. All the products I sell are custom made. If you'd like a commmission, message me on Instagram linked below.</p>
-                    <div class="intro-button mx-auto"><a class="btn btn-primary btn-xl"
-                            href="https://www.instagram.com/treestreet_woodworks/" target="_blank">
-                            <img class="instagramlogo" src="assets/img/instagram.png" alt="Instagram">Instagram</a>
+            <h2 class="section-title">Featured Work</h2>
+            <p class="text-center" style="color: var(--color-text-light); margin-bottom: 3rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                A selection of recent projects showcasing the variety and quality of custom woodwork available.
+            </p>
+
+            <div class="grid grid-3">
+                <div class="card">
+                    <img src="assets/img/portfolio-01.jpg" alt="Custom wooden bowl" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Custom Bowls</h3>
+                        <p class="card-text">Hand-turned wooden bowls crafted from premium hardwoods, perfect for display or everyday use.</p>
+                        <a href="portfolio.html" class="btn btn-secondary">View Gallery</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="assets/img/products-02.jpg" alt="Handcrafted cutting board" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Cutting Boards</h3>
+                        <p class="card-text">Beautiful and functional cutting boards made from carefully selected wood with food-safe finishes.</p>
+                        <a href="products.html" class="btn btn-secondary">See Products</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="assets/img/products-01.jpg" alt="Handcrafted wooden pens" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Artisan Pens</h3>
+                        <p class="card-text">Elegant handcrafted pens featuring exotic woods and premium hardware for discerning writers.</p>
+                        <a href="products.html" class="btn btn-secondary">Browse Collection</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- <section class="page-section cta">
+
+    <!-- Call to Action Section -->
+    <section class="section" style="background-color: var(--color-primary); color: var(--color-light); text-align: center;">
         <div class="container">
-            <div class="row">
-                <div class="col-xl-9 mx-auto">
-                    <div class="cta-inner bg-faded text-center rounded">
-                        <h2 class="section-heading mb-4">
-                            <span class="section-heading-lower">Contact</span>
-                        </h2>
-                        <p class="mb-0">Email</p>
+            <h2 style="color: var(--color-light); font-size: 2.5rem; margin-bottom: 1rem;">Ready to Start Your Custom Project?</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 2rem; max-width: 700px; margin-left: auto; margin-right: auto;">
+                Let's collaborate to create a unique wooden piece that perfectly fits your vision and space.
+            </p>
+            <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Tree Streets Woodworks</h3>
+                    <p style="color: var(--color-text-light);">
+                        Handcrafted wooden creations made with passion and precision. Every piece tells a story.
+                    </p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="index.html" class="footer-link">Home</a>
+                    <a href="portfolio.html" class="footer-link">Portfolio</a>
+                    <a href="products.html" class="footer-link">Products</a>
+                    <a href="contact.html" class="footer-link">Contact</a>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <p style="color: var(--color-text-light); margin-bottom: 1rem;">
+                        Follow my work and see behind-the-scenes of the crafting process.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://instagram.com/treestreet_woodworks" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+                            <img src="assets/img/instagram.png" alt="Instagram" style="width: 32px; height: 32px;">
+                        </a>
                     </div>
                 </div>
             </div>
-        </div>
-    </section> -->
-    <footer class="footer text-faded text-center py-5">
-        <div class="container">
-            <p class="m-0 small">Copyright &copy; Tree Street Woodworks 2024</p>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Tree Streets Woodworks. All rights reserved.</p>
+            </div>
         </div>
     </footer>
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
-</body>
 
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
 </html>

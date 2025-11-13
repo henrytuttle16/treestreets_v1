@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of handcrafted wooden creations by Tree Streets Woodworks - View custom projects and completed work.">
+    <title>Portfolio - Tree Streets Woodworks</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav-container">
+                <a href="index.html" class="logo">Tree Streets Woodworks</a>
+
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu">
+                    ☰
+                </button>
+
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
+                    <li><a href="products.html" class="nav-link">Products</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Portfolio</h1>
+            <p class="page-subtitle">A showcase of recent custom woodworking projects and handcrafted creations</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Gallery -->
+    <section class="section">
+        <div class="container">
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="bowls">
+                    <img src="assets/img/portfolio-01.jpg" alt="Custom wooden bowl with natural grain pattern" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Walnut Bowl</h3>
+                        <p class="gallery-category">Custom Bowl</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="cutting-boards">
+                    <img src="assets/img/portfolio-02.jpg" alt="Edge grain cutting board with maple and walnut" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Maple & Walnut Board</h3>
+                        <p class="gallery-category">Cutting Board</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="bowls">
+                    <img src="assets/img/portfolio-03.jpg" alt="Cherry wood bowl with smooth finish" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Cherry Bowl</h3>
+                        <p class="gallery-category">Turned Bowl</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="pens">
+                    <img src="assets/img/portfolio-04.jpg" alt="Handcrafted pen set with exotic wood" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Exotic Wood Pen Set</h3>
+                        <p class="gallery-category">Artisan Pens</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="custom">
+                    <img src="assets/img/portfolio-05.jpg" alt="Custom woodworking project detail" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Custom Project</h3>
+                        <p class="gallery-category">Commissioned Work</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="custom">
+                    <img src="assets/img/portfolio-06.jpg" alt="Detailed view of woodworking craftsmanship" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Fine Detail Work</h3>
+                        <p class="gallery-category">Custom Piece</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="section" style="background-color: white; text-align: center;">
+        <div class="container">
+            <h2 style="color: var(--color-primary); margin-bottom: 1rem;">Inspired by What You See?</h2>
+            <p style="color: var(--color-text-light); font-size: 1.1rem; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                Let's create something unique for you. Get in touch to discuss your custom woodworking project.
+            </p>
+            <a href="contact.html" class="btn btn-primary">Request Custom Work</a>
+        </div>
+    </section>
+
+    <!-- Image Modal -->
+    <div class="modal" id="imageModal">
+        <span class="modal-close" id="modalClose">&times;</span>
+        <button class="modal-nav modal-prev" id="modalPrev" aria-label="Previous image">&lt;</button>
+        <button class="modal-nav modal-next" id="modalNext" aria-label="Next image">&gt;</button>
+        <img class="modal-content" id="modalImage" alt="Portfolio image enlarged view">
+        <div class="modal-caption" id="modalCaption"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Tree Streets Woodworks</h3>
+                    <p style="color: var(--color-text-light);">
+                        Handcrafted wooden creations made with passion and precision. Every piece tells a story.
+                    </p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="index.html" class="footer-link">Home</a>
+                    <a href="portfolio.html" class="footer-link">Portfolio</a>
+                    <a href="products.html" class="footer-link">Products</a>
+                    <a href="contact.html" class="footer-link">Contact</a>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <p style="color: var(--color-text-light); margin-bottom: 1rem;">
+                        Follow my work and see behind-the-scenes of the crafting process.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://instagram.com/treestreet_woodworks" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+                            <img src="assets/img/instagram.png" alt="Instagram" style="width: 32px; height: 32px;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Tree Streets Woodworks. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/gallery.js"></script>
+</body>
+</html>

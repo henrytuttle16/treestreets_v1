@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Tree Streets Woodworks to request custom woodworking projects, get quotes, or ask questions.">
+    <title>Contact - Tree Streets Woodworks</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav-container">
+                <a href="index.html" class="logo">Tree Streets Woodworks</a>
+
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu">
+                    ☰
+                </button>
+
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                    <li><a href="products.html" class="nav-link">Products</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section style="background-color: var(--color-primary); color: var(--color-light); padding: 4rem 0; text-align: center;">
+        <div class="container">
+            <h1 style="font-size: 2.5rem; color: var(--color-light); margin-bottom: 1rem;">Get in Touch</h1>
+            <p style="font-size: 1.125rem; color: var(--color-secondary); max-width: 700px; margin: 0 auto;">
+                Ready to bring your custom woodworking vision to life? Fill out the form below and I'll get back to you soon.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <!-- Contact Form -->
+                <div class="form-container">
+                    <h2 style="color: var(--color-primary); margin-bottom: 1.5rem;">Request a Quote</h2>
+
+                    <!-- Success Message (hidden by default) -->
+                    <div class="form-message success-message" id="successMessage" style="display: none;">
+                        <strong>Thank you!</strong> Your message has been sent successfully. I'll get back to you within 1-2 business days.
+                    </div>
+
+                    <!-- Error Message (hidden by default) -->
+                    <div class="form-message error-message" id="errorMessage" style="display: none;">
+                        <strong>Oops!</strong> Something went wrong. Please try again or contact me directly via Instagram.
+                    </div>
+
+                    <!--
+                        SETUP INSTRUCTIONS:
+                        1. Sign up for a free account at https://formspree.io
+                        2. Create a new form and get your form ID
+                        3. Replace "YOUR_FORM_ID" below with your actual Formspree form ID
+                        Example: action="https://formspree.io/f/xwkgpzxy"
+                    -->
+                    <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
+                        <!-- Name -->
+                        <div class="form-group">
+                            <label for="name" class="form-label">Full Name <span class="required">*</span></label>
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                class="form-input"
+                                required
+                                placeholder="John Doe"
+                            >
+                            <span class="form-error" id="nameError"></span>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address <span class="required">*</span></label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                class="form-input"
+                                required
+                                placeholder="john@example.com"
+                            >
+                            <span class="form-error" id="emailError"></span>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                class="form-input"
+                                placeholder="(555) 123-4567"
+                            >
+                        </div>
+
+                        <!-- Project Type -->
+                        <div class="form-group">
+                            <label for="projectType" class="form-label">Project Type <span class="required">*</span></label>
+                            <select id="projectType" name="projectType" class="form-input" required>
+                                <option value="">Select a project type...</option>
+                                <option value="cutting-board">Cutting Board</option>
+                                <option value="pen">Artisan Pen</option>
+                                <option value="bowl">Wooden Bowl</option>
+                                <option value="handle">Custom Handle</option>
+                                <option value="furniture">Furniture Piece</option>
+                                <option value="custom">Custom Project</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <span class="form-error" id="projectTypeError"></span>
+                        </div>
+
+                        <!-- Project Description -->
+                        <div class="form-group">
+                            <label for="description" class="form-label">Project Description <span class="required">*</span></label>
+                            <textarea
+                                id="description"
+                                name="description"
+                                class="form-input form-textarea"
+                                rows="5"
+                                required
+                                placeholder="Please describe your project, including dimensions, wood preferences, and any specific design details..."
+                            ></textarea>
+                            <span class="form-error" id="descriptionError"></span>
+                        </div>
+
+                        <!-- Timeline -->
+                        <div class="form-group">
+                            <label for="timeline" class="form-label">Timeline</label>
+                            <select id="timeline" name="timeline" class="form-input">
+                                <option value="">When do you need it?</option>
+                                <option value="flexible">Flexible / No Rush</option>
+                                <option value="1-2-weeks">1-2 Weeks</option>
+                                <option value="3-4-weeks">3-4 Weeks</option>
+                                <option value="1-2-months">1-2 Months</option>
+                                <option value="2plus-months">2+ Months</option>
+                            </select>
+                        </div>
+
+                        <!-- Budget Range -->
+                        <div class="form-group">
+                            <label for="budget" class="form-label">Budget Range</label>
+                            <select id="budget" name="budget" class="form-input">
+                                <option value="">Select your budget range...</option>
+                                <option value="under-50">Under $50</option>
+                                <option value="50-100">$50 - $100</option>
+                                <option value="100-200">$100 - $200</option>
+                                <option value="200-500">$200 - $500</option>
+                                <option value="500plus">$500+</option>
+                                <option value="flexible">Flexible</option>
+                            </select>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn btn-primary submit-btn" id="submitBtn">
+                            <span class="btn-text">Send Request</span>
+                            <span class="btn-loading" style="display: none;">Sending...</span>
+                        </button>
+
+                        <p style="font-size: 0.875rem; color: var(--color-text-light); margin-top: 1rem; text-align: center;">
+                            <span class="required">*</span> Required fields
+                        </p>
+                    </form>
+                </div>
+
+                <!-- Contact Info Sidebar -->
+                <div class="contact-info">
+                    <h3 style="color: var(--color-primary); margin-bottom: 1.5rem;">Other Ways to Connect</h3>
+
+                    <div class="info-card">
+                        <h4 style="color: var(--color-primary); margin-bottom: 0.5rem;">Instagram</h4>
+                        <p style="color: var(--color-text-light); margin-bottom: 1rem;">
+                            Follow my work and send me a direct message
+                        </p>
+                        <a href="https://instagram.com/treestreet_woodworks" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="width: 100%;">
+                            @treestreet_woodworks
+                        </a>
+                    </div>
+
+                    <div class="info-card">
+                        <h4 style="color: var(--color-primary); margin-bottom: 0.5rem;">Response Time</h4>
+                        <p style="color: var(--color-text-light);">
+                            I typically respond to inquiries within 1-2 business days. Thanks for your patience!
+                        </p>
+                    </div>
+
+                    <div class="info-card">
+                        <h4 style="color: var(--color-primary); margin-bottom: 0.5rem;">Custom Orders</h4>
+                        <p style="color: var(--color-text-light);">
+                            Each piece is made to order. Lead times vary depending on project complexity and current workload.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section" style="background-color: white;">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3 style="color: var(--color-primary); margin-bottom: 0.5rem;">How long does a custom order take?</h3>
+                    <p style="color: var(--color-text-light);">
+                        Lead times vary by project complexity, but typically range from 2-6 weeks. I'll provide a specific timeline when we discuss your project.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3 style="color: var(--color-primary); margin-bottom: 0.5rem;">Do you ship?</h3>
+                    <p style="color: var(--color-text-light);">
+                        Yes! I ship within the continental US. Shipping costs will be calculated based on size and destination.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3 style="color: var(--color-primary); margin-bottom: 0.5rem;">Can I choose the type of wood?</h3>
+                    <p style="color: var(--color-text-light);">
+                        Absolutely! I work with various hardwoods including maple, walnut, cherry, oak, and exotic species. We'll discuss options for your project.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3 style="color: var(--color-primary); margin-bottom: 0.5rem;">What's your return policy?</h3>
+                    <p style="color: var(--color-text-light);">
+                        Since each piece is custom-made, I work closely with you throughout the process to ensure satisfaction. Contact me if you have concerns.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Tree Streets Woodworks</h3>
+                    <p style="color: var(--color-text-light);">
+                        Handcrafted wooden creations made with passion and precision. Every piece tells a story.
+                    </p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="index.html" class="footer-link">Home</a>
+                    <a href="portfolio.html" class="footer-link">Portfolio</a>
+                    <a href="products.html" class="footer-link">Products</a>
+                    <a href="contact.html" class="footer-link">Contact</a>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <p style="color: var(--color-text-light); margin-bottom: 1rem;">
+                        Follow my work and see behind-the-scenes of the crafting process.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://instagram.com/treestreet_woodworks" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+                            <img src="assets/img/instagram.png" alt="Instagram" style="width: 32px; height: 32px;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Tree Streets Woodworks. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/form.js"></script>
+</body>
+</html>
