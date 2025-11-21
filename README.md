@@ -62,42 +62,36 @@ Then visit `http://localhost:8000` in your browser.
 
 ### 2. Contact Form Setup (Required for Email Functionality)
 
-The contact form uses **Formspree** to send emails without requiring a backend server.
+The contact form uses **FormSubmit.co** to send emails without requiring a backend server or sign-up.
 
 #### Steps to activate the contact form:
 
-1. **Sign up for Formspree** (free tier available)
-   - Visit: https://formspree.io
-   - Create a free account
-   - Click "New Form" to create a form
-
-2. **Get your Form ID**
-   - After creating the form, you'll receive a Form ID (e.g., `xwkgpzxy`)
-   - Your form endpoint will look like: `https://formspree.io/f/xwkgpzxy`
-
-3. **Update contact.html**
+1. **Update contact.html**
    - Open `contact.html` in a text editor
-   - Find line 72 (the form tag):
+   - Find line 76 (the form tag):
      ```html
-     <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+     <form id="contactForm" action="https://formsubmit.co/placeholder@email.com" method="POST" class="contact-form">
      ```
-   - Replace `YOUR_FORM_ID` with your actual Formspree form ID:
+   - Replace `placeholder@email.com` with your actual email address:
      ```html
-     <form id="contactForm" action="https://formspree.io/f/xwkgpzxy" method="POST">
+     <form id="contactForm" action="https://formsubmit.co/yourname@gmail.com" method="POST" class="contact-form">
      ```
    - Save the file
 
-4. **Test the form**
+2. **Test the form**
    - Open `contact.html` in your browser
    - Fill out and submit the form
-   - For the first submission, Formspree will ask you to confirm your email address
+   - For the first submission, FormSubmit will send a confirmation email to verify your email address
+   - Click the confirmation link in that email
    - After confirmation, all future form submissions will be sent to your email
+
+That's it! No sign-up or account creation required.
 
 #### Alternative Email Services
 
 If you prefer a different service, you can use:
+- **Formspree** (https://formspree.io/) - More features, requires free account
 - **EmailJS** (https://www.emailjs.com/) - More features, requires API key
-- **FormSubmit** (https://formsubmit.co/) - Simple, no registration required
 - **Netlify Forms** (if hosting on Netlify) - Built-in form handling
 
 ### 3. Customization
@@ -223,7 +217,7 @@ To keep the site fast, compress images before uploading:
 
 For issues or questions:
 - Check browser console for JavaScript errors
-- Verify Formspree setup if form isn't working
+- Verify FormSubmit.co email is correct if form isn't working
 - Ensure all file paths are correct and case-sensitive
 - Test on multiple devices and browsers
 
@@ -231,7 +225,7 @@ For issues or questions:
 
 - Design and Development: Custom built for Tree Streets Woodworks
 - Fonts: Google Fonts (Raleway, Lora)
-- Form Service: Formspree
+- Form Service: FormSubmit.co
 - Icons: Unicode symbols
 
 ## License

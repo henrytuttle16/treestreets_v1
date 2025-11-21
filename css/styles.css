@@ -331,7 +331,7 @@ img {
   background-color: var(--color-dark);
   color: var(--color-light);
   padding: var(--spacing-xl) 0 var(--spacing-md);
-  margin-top: var(--spacing-3xl);
+  margin-top: 0;
 }
 
 .footer-content {
