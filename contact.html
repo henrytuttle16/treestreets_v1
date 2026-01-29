@@ -38,23 +38,13 @@
         </div>
     </header>
 
-    <!-- Page Header -->
-    <section style="background-color: var(--color-primary); color: var(--color-light); padding: 4rem 0; text-align: center;">
-        <div class="container">
-            <h1 style="font-size: 2.5rem; color: var(--color-light); margin-bottom: 1rem;">Get in Touch</h1>
-            <p style="font-size: 1.125rem; color: var(--color-secondary); max-width: 700px; margin: 0 auto;">
-                Ready to bring your custom woodworking vision to life? Fill out the form below and I'll get back to you soon.
-            </p>
-        </div>
-    </section>
-
     <!-- Contact Form Section -->
     <section class="section">
         <div class="container">
             <div class="contact-wrapper">
                 <!-- Contact Form -->
                 <div class="form-container">
-                    <h2 style="color: var(--color-primary); margin-bottom: 1.5rem;">Request a Quote</h2>
+                    <h2 style="color: var(--color-primary); margin-bottom: 1.5rem;">Request a Piece</h2>
 
                     <!-- Success Message (hidden by default) -->
                     <div class="form-message success-message" id="successMessage" style="display: none;">
@@ -122,13 +112,14 @@
                             <label for="projectType" class="form-label">Project Type <span class="required">*</span></label>
                             <select id="projectType" name="projectType" class="form-input" required>
                                 <option value="">Select a project type...</option>
-                                <option value="cutting-board">Cutting Board</option>
                                 <option value="pen">Artisan Pen</option>
-                                <option value="bowl">Wooden Bowl</option>
+                                <option value="cutting-board">Cutting Board</option>
                                 <option value="handle">Custom Handle</option>
+                                <option value="bowl">Wooden Bowl</option>
+                                <option value="oil-vial">Oil Vial</option>
+                                <option value="vase">Vase</option>
                                 <option value="furniture">Furniture Piece</option>
                                 <option value="custom">Custom Project</option>
-                                <option value="other">Other</option>
                             </select>
                             <span class="form-error" id="projectTypeError"></span>
                         </div>
@@ -160,20 +151,6 @@
                             </select>
                         </div>
 
-                        <!-- Budget Range -->
-                        <div class="form-group">
-                            <label for="budget" class="form-label">Budget Range</label>
-                            <select id="budget" name="budget" class="form-input">
-                                <option value="">Select your budget range...</option>
-                                <option value="under-50">Under $50</option>
-                                <option value="50-100">$50 - $100</option>
-                                <option value="100-200">$100 - $200</option>
-                                <option value="200-500">$200 - $500</option>
-                                <option value="500plus">$500+</option>
-                                <option value="flexible">Flexible</option>
-                            </select>
-                        </div>
-
                         <!-- Submit Button -->
                         <button type="submit" class="btn btn-primary submit-btn" id="submitBtn">
                             <span class="btn-text">Send Request</span>
@@ -191,10 +168,7 @@
                     <h3 style="color: var(--color-primary); margin-bottom: 1.5rem;">Other Ways to Connect</h3>
 
                     <div class="info-card">
-                        <h4 style="color: var(--color-primary); margin-bottom: 0.5rem;">Instagram</h4>
-                        <p style="color: var(--color-text-light); margin-bottom: 1rem;">
-                            Follow my work and send me a direct message
-                        </p>
+                        <h4 style="color: var(--color-primary); margin-bottom: 1rem;">Instagram</h4>
                         <a href="https://instagram.com/treestreet_woodworks" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="width: 100%;">
                             @treestreet_woodworks
                         </a>
