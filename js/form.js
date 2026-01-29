@@ -148,14 +148,14 @@ document.addEventListener('DOMContentLoaded', function() {
         btnLoading.style.display = 'inline';
 
         try {
-            // Submit form using Fetch API
+            // Submit form using Fetch API (Netlify Forms)
             const formData = new FormData(form);
-            const response = await fetch(form.action, {
+            const response = await fetch('/', {
                 method: 'POST',
-                body: formData,
                 headers: {
-                    'Accept': 'application/json'
-                }
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                body: new URLSearchParams(formData).toString()
             });
 
             if (response.ok) {

@@ -56,17 +56,8 @@
                         <strong>Oops!</strong> Something went wrong. Please try again or contact me directly via Instagram.
                     </div>
 
-                    <!--
-                        SETUP INSTRUCTIONS (FormSubmit.co):
-                        1. Replace "placeholder@email.com" below with your actual email address
-                        2. That's it! No sign-up required.
-                        Example: action="https://formsubmit.co/yourname@gmail.com"
-                    -->
-                    <form id="contactForm" action="https://formsubmit.co/benjtuttle@gmail.com" method="POST" class="contact-form">
-                        <!-- FormSubmit Configuration -->
-                        <input type="hidden" name="_subject" value="New Project Request from Tree Streets Woodworks">
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_template" value="table">
+                    <form id="contactForm" name="contact" method="POST" data-netlify="true" class="contact-form">
+                        <input type="hidden" name="form-name" value="contact">
                         <!-- Name -->
                         <div class="form-group">
                             <label for="name" class="form-label">Full Name <span class="required">*</span></label>
