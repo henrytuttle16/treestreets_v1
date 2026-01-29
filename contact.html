@@ -19,6 +19,16 @@
     <link rel="stylesheet" href="css/contact.css">
 </head>
 <body>
+    <!-- Hidden form for Netlify detection -->
+    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+        <input name="name">
+        <input name="email">
+        <input name="phone">
+        <input name="projectType">
+        <textarea name="description"></textarea>
+        <input name="timeline">
+    </form>
+
     <!-- Header & Navigation -->
     <header class="header">
         <div class="container">
